@@ -1,6 +1,8 @@
 import './app.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { CartContextProvider } from '../context/CartContext';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Checkout from './Checkout/Checkout';
 import Navbar from './Navbar/Navbar';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
@@ -12,6 +14,7 @@ const App = () => {
     <>
     <BrowserRouter>
       <CartContextProvider>
+      <ToastContainer/>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
