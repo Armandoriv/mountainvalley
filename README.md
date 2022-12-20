@@ -18,3 +18,4 @@ _Este proyecto lo cree para poder poner en practica mis habilidades en react_
 * [Firebase] - (https://firebase.google.com/)
 * [Bootstrap] - (https://getbootstrap.com/)
 
+![ecomercegif](https://user-images.githubusercontent.com/110502461/208735984-5333718a-88bc-4532-a8ab-1ddc9c58c05d.gif)
