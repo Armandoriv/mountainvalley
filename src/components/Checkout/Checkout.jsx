@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { createOrdenCompra, getProducto, updateProducto } from "../../assets/firebase"
 import { CartContext } from "../../context/CartContext"
 import {toast } from 'react-toastify';
+import './Checkout.css'
 
 const Checkout = () => {
     const datosFormulario = React.useRef()
@@ -36,31 +37,31 @@ const Checkout = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container form">
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre</label>
-                    <input type="text" className="form-control" name="nombre" />
+                    <input type="text" className="form-control" name="nombre" required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="apellido" className="form-label">Apellido</label>
-                    <input type="text" className="form-control" name="apellido" />
+                    <input type="text" className="form-control" name="apellido" required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" name="email" />
+                    <input type="email" className="form-control" name="email"  required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="dni" className="form-label">DNI</label>
-                    <input type="number" className="form-control" name="dni" />
+                    <input type="number" className="form-control" name="dni" required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="celular" className="form-label">Numero telefonico</label>
-                    <input type="number" className="form-control" name="celular" />
+                    <input type="number" className="form-control" name="celular" required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="direccion" className="form-label">Dirección</label>
-                    <input type="text" className="form-control" name="direccion" />
+                    <input type="text" className="form-control" name="direccion" required/>
                 </div>
                    
                         <button type="submit" className="btn btn-primary">Finalizar Compra</button>

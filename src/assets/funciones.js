@@ -5,4 +5,3 @@ export const consultarBDD = async (ruta) => {
     const productos = await promise.json()
     return productos
 }
-
